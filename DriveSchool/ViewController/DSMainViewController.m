@@ -44,6 +44,7 @@
     }
     
     
+    
 }
 -(void)setDefaultValue{
     NSLog(@"%@",self.navigationController);
