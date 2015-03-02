@@ -15,4 +15,9 @@
     [self.layer setBorderWidth:0.8];   //边框宽度
     [self.layer setBorderColor:[color CGColor]];
 }
+-(void)setBorderWithRedius:(CGFloat)radius{
+    [self.layer setMasksToBounds:YES];
+    [self.layer setCornerRadius:radius]; //设置矩圆角半径
+//    [self.layer setBorderWidth:0.0];   //边框宽度
+}
 @end
