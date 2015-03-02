@@ -28,6 +28,8 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    NSLog(@"dddd");
+    NSLog(@"dddd");
     
     [self setDefaultValue];
     [self setFrame];
