@@ -12,6 +12,8 @@
 
 - (void)awakeFromNib {
     // Initialization code
+    self.dataButton.frame = CGRectMake(CURRENT_WIDTH-self.dataButton.frame.size.width-20, self.dataButton.frame.origin.y, self.dataButton.frame.size.width, self.dataButton.frame.size.height);
+    [self.dataButton setBorderWithRedius:5.0];
 }
 
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated {

@@ -15,6 +15,8 @@
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
 @property (strong, nonatomic) NSMutableArray *tableItems;
 @property (strong, nonatomic) NSMutableArray *bannerArray;
+@property (weak, nonatomic) IBOutlet UIPageControl *pageControl;
+@property (strong, nonatomic) NSTimer *bannerTimer;
 
 
 @end
@@ -27,47 +29,67 @@
     [self initFrame];
     [self initBanner];
 }
+-(void)viewWillAppear:(BOOL)animated{
+    [super viewWillAppear:animated];
+    self.tabBarController.title = @"首页";
+}
+
 -(void)initBanner{
     _bannerArray = [[NSMutableArray alloc]init];
     NSDictionary *bannerOne = @{@"image":@"icon_main_banner_one.png",@"url":@"http://baidu.com"};
-    NSDictionary *bannerTwo = @{@"image":@"icon_main_banner_one.png",@"url":@"http://baidu.com"};
+    NSDictionary *bannerTwo = @{@"image":@"icon_main_banner_four.jpg",@"url":@"http://baidu.com"};
     [_bannerArray addObject:bannerOne];
     [_bannerArray addObject:bannerTwo];
     [_bannerView setContentSize:CGSizeMake(CURRENT_WIDTH*_bannerArray.count, 160)];
     
     for (int i = 0; i < _bannerArray.count; i++) {
         NSDictionary *dic = [_bannerArray objectAtIndex:i];
-        UIImageView *iamgeView = [[UIImageView alloc]initWithFrame:CGRectMake(i*CURRENT_WIDTH, 0, CURRENT_WIDTH, 160)];
         NSString *imageName = [dic nonNullValueForKey:@"image"];
-        [iamgeView setImage:[UIImage imageNamed:imageName]];
-        [_bannerView addSubview:iamgeView];
+        UIButton *bannerBtn = [[UIButton alloc]initWithFrame:CGRectMake(i*CURRENT_WIDTH, 0, CURRENT_WIDTH, 160)];
+        [bannerBtn setBackgroundImage:[UIImage imageNamed:imageName] forState:UIControlStateNormal];
+
+        [_bannerView addSubview:bannerBtn];
     }
     
-    
-    
+    [_pageControl setNumberOfPages:_bannerArray.count];
+    if(!_bannerTimer){
+        _bannerTimer = [NSTimer scheduledTimerWithTimeInterval:5.0 target:self selector:@selector(bannerAutoScroll) userInfo:nil repeats:YES];
+    }
+
+}
+/**
+ *  banner自动滚动
+ */
+-(void)bannerAutoScroll{
+    NSInteger bannerCount = _pageControl.numberOfPages;
+    NSInteger currentPage = _pageControl.currentPage;
+    if (currentPage < bannerCount-1) {
+        CGPoint point = CGPointMake(CURRENT_WIDTH*currentPage+CURRENT_WIDTH,0);
+        [_bannerView setContentOffset:point animated:YES];
+        [_pageControl setCurrentPage:currentPage+1];
+    }else if(currentPage+1 == bannerCount){
+        CGPoint point = CGPointMake(0,0);
+        [_bannerView setContentOffset:point animated:YES];
+        [_pageControl setCurrentPage:0];
+    }
 }
 -(void)setDefaultValue{
-    NSLog(@"%@",self.navigationController);
-//    self.navigationItem.title = @"首页";
-    [self.navigationController setTitle:@"首页"];
-//    self.title = @"首页";
-
     [self.navigationController.navigationBar setBackgroundColor:[UIColor blueColor]];
     
     _tableItems = [[NSMutableArray alloc]init];
     NSDictionary *newsOne = @{@"image":@"image_main_news_one.png",@"url":@"http://baidu.com",@"title":@"新2015年驾校科目四安全常识",@"content":@"为了更好的培养出优秀的驾驶员，驾驶员考试越来越严格且项目增多。对于学员的驾驶技能又有很大的考验。特此考试吧为大家整理了相关内容，供大家参考学习！"};
-    NSDictionary *newsTwo = @{@"image":@"image_main_news_one.png",@"url":@"http://baidu.com",@"title":@"教练想学员索要500元保险费被开除",@"content":@"佛山一名驾校教练为疏通关系,收取学员300元到500元不等的“保险费”后向考官行贿,共有14名交警牵涉其中,涉案金额达61.7万元。"};
-    NSDictionary *newsThree = @{@"image":@"image_main_news_one.png",@"url":@"http://baidu.com",@"title":@"教练想学员索要500元保险费被开除",@"content":@"佛山一名驾校教练为疏通关系,收取学员300元到500元不等的“保险费”后向考官行贿,共有14名交警牵涉其中,涉案金额达61.7万元。"};
-    NSDictionary *newsFour = @{@"image":@"image_main_news_one.png",@"url":@"http://baidu.com",@"title":@"教练想学员索要500元保险费被开除",@"content":@"佛山一名驾校教练为疏通关系,收取学员300元到500元不等的“保险费”后向考官行贿,共有14名交警牵涉其中,涉案金额达61.7万元。"};
-    NSDictionary *newsFive = @{@"image":@"image_main_news_one.png",@"url":@"http://baidu.com",@"title":@"教练想学员索要500元保险费被开除",@"content":@"佛山一名驾校教练为疏通关系,收取学员300元到500元不等的“保险费”后向考官行贿,共有14名交警牵涉其中,涉案金额达61.7万元。"};
-    NSDictionary *newsSix = @{@"image":@"image_main_news_one.png",@"url":@"http://baidu.com",@"title":@"教练想学员索要500元保险费被开除",@"content":@"佛山一名驾校教练为疏通关系,收取学员300元到500元不等的“保险费”后向考官行贿,共有14名交警牵涉其中,涉案金额达61.7万元。"};
+    NSDictionary *newsTwo = @{@"image":@"image_main_news_two.png",@"url":@"http://baidu.com",@"title":@"教练想学员索要500元保险费被开除",@"content":@"佛山一名驾校教练为疏通关系,收取学员300元到500元不等的“保险费”后向考官行贿,共有14名交警牵涉其中,涉案金额达61.7万元。"};
+    NSDictionary *newsThree = @{@"image":@"image_main_news_three.jpg",@"url":@"http://baidu.com",@"title":@"报名前选择驾校与教练的注意事项",@"content":@" 城市的外来人口多，学驾校的人很多，而做教练这行的就更多，俗话说：人上一百，形形色色，如何找到一个适合自己的教练，就变得很难。我这里不说人品，不说距离，就仅从这个行业的管理规定，来告诉准备学驾校的新手，如何从资质上选择一个教练。"};
+    NSDictionary *newsFour = @{@"image":@"image_main_news_four.jpg",@"url":@"http://baidu.com",@"title":@"新人学车，是手动挡好还是自动挡好",@"content":@"赶着报考驾校，但现在正在纠结着报手动挡好还是自动挡好。自动挡么方便，而且听说好学点，但缺点是钱贵点，而且学得东西好像没有那么精(听说的)。手动挡么难学点，但是听说便宜点，学得东西多一点。 各位前辈们，给点宝贵的意见把。"};
+    NSDictionary *newsFive = @{@"image":@"image_main_news_five.jpg",@"url":@"http://baidu.com",@"title":@"分享：驾校与教练选择的终极经验.",@"content":@"在坛论看了很多帖子，很少有好的帖子可以给新手在选驾校，教练和考试方面可以借鉴。就想到写一些考驾照的经验给大家学习一下，但是太懒一直没有动，才想起应该分享些经验，给同学们一些参考。"};
+   
     
     [_tableItems addObject:newsOne];
     [_tableItems addObject:newsTwo];
     [_tableItems addObject:newsThree];
     [_tableItems addObject:newsFour];
     [_tableItems addObject:newsFive];
-    [_tableItems addObject:newsSix];
+
     
     _tableView.delegate = self;
     _tableView.dataSource = self;
@@ -83,7 +105,7 @@
 }
 #pragma tableViewDelegate
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
-    return 6;
+    return 5;
 }
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
     static NSString *CellIndentifier = @"mainCell";

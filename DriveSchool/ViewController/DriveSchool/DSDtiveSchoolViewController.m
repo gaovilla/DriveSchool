@@ -32,13 +32,16 @@
     [self setDefaultValue];
     [self setFrame];
 }
-
+-(void)viewWillAppear:(BOOL)animated{
+    [super viewWillAppear:animated];
+    self.tabBarController.title = @"驾校";
+}
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
 -(void)setDefaultValue{
-    [self setTitle:@"驾校"];
+    
     [_subjectOneScrollView setContentSize:CGSizeMake(0, 800)];
     _collectionView.delegate = self;
     _collectionView.dataSource = self;
@@ -68,6 +71,7 @@
 -(void)setFrame{
     _subjectOneView.frame = CGRectMake(CURRENT_WIDTH, 120, CURRENT_WIDTH,_subjectOneView.frame.size.height);
     _collectionView.frame = CGRectMake(_collectionView.frame.origin.x, _collectionView.frame.origin.y, CURRENT_WIDTH,_collectionView.frame.size.height);
+    _subjectTwoView.frame = CGRectMake(CURRENT_WIDTH*2, _subjectTwoView.frame.origin.y, CURRENT_WIDTH,_subjectTwoView.frame.size.height);
 }
 - (IBAction)tapLabelOne:(id)sender {
     [UIView animateWithDuration:0.3 animations:^{
@@ -106,7 +110,7 @@
 }
 
 -(NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section{
-    return 10;
+    return 9;
 }
 -(NSInteger)numberOfSectionsInCollectionView:(UICollectionView *)collectionView{
     return 1;

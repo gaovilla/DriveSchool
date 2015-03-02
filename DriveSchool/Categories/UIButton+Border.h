@@ -10,4 +10,5 @@
 
 @interface UIButton (Border)
 -(void)setBorder:(UIColor *)color;
+-(void)setBorderWithRedius:(CGFloat)radius;
 @end
