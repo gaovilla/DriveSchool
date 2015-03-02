@@ -30,7 +30,7 @@
     [super viewDidLoad];
     NSLog(@"dddd");
     NSLog(@"dddd");
-    
+    NSLog(@"gaobo");
     [self setDefaultValue];
     [self setFrame];
 }
