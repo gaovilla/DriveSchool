@@ -31,6 +31,7 @@
     NSLog(@"dddd");
     NSLog(@"dddd");
     NSLog(@"gaobo");
+    NSLog(@"zxc");
     [self setDefaultValue];
     [self setFrame];
 }
