@@ -31,6 +31,7 @@
     NSLog(@"dddd");
     NSLog(@"dddd");
     
+    
     [self setDefaultValue];
     [self setFrame];
 }
