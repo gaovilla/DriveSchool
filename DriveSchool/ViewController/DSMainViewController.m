@@ -17,6 +17,8 @@
 @property (strong, nonatomic) NSMutableArray *bannerArray;
 @property (weak, nonatomic) IBOutlet UIPageControl *pageControl;
 @property (strong, nonatomic) NSTimer *bannerTimer;
+@property (strong, nonatomic) NSMutableArray *functionItemArray;
+@property (weak, nonatomic) IBOutlet UIView *functionItemView;
 
 
 @end
@@ -28,6 +30,7 @@
     [self setDefaultValue];
     [self initFrame];
     [self initBanner];
+    [self initFounctionItem];
 }
 -(void)viewWillAppear:(BOOL)animated{
     [super viewWillAppear:animated];
@@ -55,7 +58,50 @@
     if(!_bannerTimer){
         _bannerTimer = [NSTimer scheduledTimerWithTimeInterval:5.0 target:self selector:@selector(bannerAutoScroll) userInfo:nil repeats:YES];
     }
+}
+//生成功能项
+-(void)initFounctionItem{
+    _functionItemArray = [[NSMutableArray alloc]init];
+    NSDictionary *itemOne = @{@"name":@"新手驾到",@"image":@"btn_main_item_one.png",@"url":@"http://baidu.com"};
+    NSDictionary *itemTwo = @{@"name":@"找驾校",@"image":@"btn_main_item_two.png",@"url":@"http://baidu.com"};
+    NSDictionary *itemThree = @{@"name":@"找教练",@"image":@"btn_main_item_three.png",@"url":@"http://baidu.com"};
+    
+    [_functionItemArray addObject:itemOne];
+    [_functionItemArray addObject:itemTwo];
+    [_functionItemArray addObject:itemThree];
 
+    if(_functionItemArray.count<5){
+        for (int i=0; i<_functionItemArray.count; i++) {
+            NSDictionary *dic =  [_functionItemArray objectAtIndex:i];
+            
+            int width = CURRENT_WIDTH / _functionItemArray.count;
+            UIView *view = [[UIView alloc]initWithFrame:CGRectMake(width*i, 0, width, _functionItemView.frame.size.height)];
+            UIButton *button = [[UIButton alloc]initWithFrame:CGRectMake(0, -20, view.frame.size.width, view.frame.size.width)];
+            button.tag = i;
+            [button setImage:[UIImage imageNamed:[dic objectForKey:@"image"]] forState:UIControlStateNormal];
+            [button addTarget:self action:@selector(clickFunctionItem:) forControlEvents:UIControlEventTouchUpInside];
+            NSLog(@"%f",view.frame.size.width);
+            UILabel *label = [[UILabel alloc]initWithFrame:CGRectMake(0,  view.frame.size.height-40, view.frame.size.width, 10)];
+            label.text = [dic objectForKey:@"name"];
+
+            label.font = [UIFont systemFontOfSize:13.5];
+            label.textColor = [UIColor lightGrayColor];
+            label.textAlignment = YES;
+            
+            
+            [view addSubview:button];
+            [view addSubview:label];
+            
+            [_functionItemView addSubview:view];
+        }
+    }
+}
+-(void)clickFunctionItem:(UIButton *)button{
+    NSLog(@"clickItem");
+    if(button.tag == 0){
+        UIViewController *vc = [self getViewControllerFromStoryBoard:@"DSFindTeacherViewController"];
+        [self.navigationController pushViewController:vc animated:YES];
+    }
 }
 /**
  *  banner自动滚动

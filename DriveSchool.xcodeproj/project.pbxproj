@@ -114,6 +114,17 @@
 		00C191981A9F5A2100B3012A /* icon_main_banner_four@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 00C191961A9F5A2100B3012A /* icon_main_banner_four@2x.jpg */; };
 		00C191991A9F5A2100B3012A /* icon_main_banner_three@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 00C191971A9F5A2100B3012A /* icon_main_banner_three@2x.jpg */; };
 		00C1919B1A9F625300B3012A /* bg_driveSchool_introduce_junan@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 00C1919A1A9F625300B3012A /* bg_driveSchool_introduce_junan@2x.jpg */; };
+		00C2B0751AA5859A00F2AC61 /* SCNavTabBar.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 00C2B06C1AA5859A00F2AC61 /* SCNavTabBar.bundle */; };
+		00C2B0761AA5859A00F2AC61 /* SCNavTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 00C2B06F1AA5859A00F2AC61 /* SCNavTabBarController.m */; };
+		00C2B0771AA5859A00F2AC61 /* SCNavTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 00C2B0721AA5859A00F2AC61 /* SCNavTabBar.m */; };
+		00C2B0781AA5859A00F2AC61 /* SCPopView.m in Sources */ = {isa = PBXBuildFile; fileRef = 00C2B0741AA5859A00F2AC61 /* SCPopView.m */; };
+		00C2B07C1AA58B5700F2AC61 /* DSMainSubjectViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 00C2B07B1AA58B5700F2AC61 /* DSMainSubjectViewController.m */; };
+		00C2B0801AA58CAB00F2AC61 /* DSNewSubjectOneViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 00C2B07F1AA58CAB00F2AC61 /* DSNewSubjectOneViewController.m */; };
+		00C2B0841AA58CF400F2AC61 /* DSNewSubjectTwoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 00C2B0831AA58CF400F2AC61 /* DSNewSubjectTwoViewController.m */; };
+		00C2B0891AA59A2700F2AC61 /* DSNewSubjectThreeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 00C2B0881AA59A2700F2AC61 /* DSNewSubjectThreeViewController.m */; };
+		00C2B08C1AA59A4A00F2AC61 /* DSNewSubjectFourViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 00C2B08B1AA59A4A00F2AC61 /* DSNewSubjectFourViewController.m */; };
+		00C2B0901AA5AB8B00F2AC61 /* DSFindTeacherViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 00C2B08F1AA5AB8B00F2AC61 /* DSFindTeacherViewController.m */; };
+		00C2B0931AA5AE5A00F2AC61 /* DSFindTeacherTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 00C2B0921AA5AE5A00F2AC61 /* DSFindTeacherTableViewCell.m */; };
 		00C9844F1A88DB8900723AF4 /* DSDtiveSchoolViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 00C9844E1A88DB8900723AF4 /* DSDtiveSchoolViewController.m */; };
 		00ECBEBF1A87650C009F262E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 00ECBEBE1A87650C009F262E /* main.m */; };
 		00ECBEC21A87650C009F262E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 00ECBEC11A87650C009F262E /* AppDelegate.m */; };
@@ -323,6 +334,28 @@
 		00C191961A9F5A2100B3012A /* icon_main_banner_four@2x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "icon_main_banner_four@2x.jpg"; sourceTree = "<group>"; };
 		00C191971A9F5A2100B3012A /* icon_main_banner_three@2x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "icon_main_banner_three@2x.jpg"; sourceTree = "<group>"; };
 		00C1919A1A9F625300B3012A /* bg_driveSchool_introduce_junan@2x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "bg_driveSchool_introduce_junan@2x.jpg"; sourceTree = "<group>"; };
+		00C2B06B1AA5859A00F2AC61 /* CommonMacro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommonMacro.h; sourceTree = "<group>"; };
+		00C2B06C1AA5859A00F2AC61 /* SCNavTabBar.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = SCNavTabBar.bundle; sourceTree = "<group>"; };
+		00C2B06E1AA5859A00F2AC61 /* SCNavTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCNavTabBarController.h; sourceTree = "<group>"; };
+		00C2B06F1AA5859A00F2AC61 /* SCNavTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCNavTabBarController.m; sourceTree = "<group>"; };
+		00C2B0711AA5859A00F2AC61 /* SCNavTabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCNavTabBar.h; sourceTree = "<group>"; };
+		00C2B0721AA5859A00F2AC61 /* SCNavTabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCNavTabBar.m; sourceTree = "<group>"; };
+		00C2B0731AA5859A00F2AC61 /* SCPopView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCPopView.h; sourceTree = "<group>"; };
+		00C2B0741AA5859A00F2AC61 /* SCPopView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCPopView.m; sourceTree = "<group>"; };
+		00C2B07A1AA58B5700F2AC61 /* DSMainSubjectViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DSMainSubjectViewController.h; sourceTree = "<group>"; };
+		00C2B07B1AA58B5700F2AC61 /* DSMainSubjectViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DSMainSubjectViewController.m; sourceTree = "<group>"; };
+		00C2B07E1AA58CAB00F2AC61 /* DSNewSubjectOneViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DSNewSubjectOneViewController.h; sourceTree = "<group>"; };
+		00C2B07F1AA58CAB00F2AC61 /* DSNewSubjectOneViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DSNewSubjectOneViewController.m; sourceTree = "<group>"; };
+		00C2B0821AA58CF400F2AC61 /* DSNewSubjectTwoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DSNewSubjectTwoViewController.h; sourceTree = "<group>"; };
+		00C2B0831AA58CF400F2AC61 /* DSNewSubjectTwoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DSNewSubjectTwoViewController.m; sourceTree = "<group>"; };
+		00C2B0871AA59A2700F2AC61 /* DSNewSubjectThreeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DSNewSubjectThreeViewController.h; sourceTree = "<group>"; };
+		00C2B0881AA59A2700F2AC61 /* DSNewSubjectThreeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DSNewSubjectThreeViewController.m; sourceTree = "<group>"; };
+		00C2B08A1AA59A4A00F2AC61 /* DSNewSubjectFourViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DSNewSubjectFourViewController.h; sourceTree = "<group>"; };
+		00C2B08B1AA59A4A00F2AC61 /* DSNewSubjectFourViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DSNewSubjectFourViewController.m; sourceTree = "<group>"; };
+		00C2B08E1AA5AB8B00F2AC61 /* DSFindTeacherViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DSFindTeacherViewController.h; sourceTree = "<group>"; };
+		00C2B08F1AA5AB8B00F2AC61 /* DSFindTeacherViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DSFindTeacherViewController.m; sourceTree = "<group>"; };
+		00C2B0911AA5AE5A00F2AC61 /* DSFindTeacherTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DSFindTeacherTableViewCell.h; sourceTree = "<group>"; };
+		00C2B0921AA5AE5A00F2AC61 /* DSFindTeacherTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DSFindTeacherTableViewCell.m; sourceTree = "<group>"; };
 		00C9844D1A88DB8900723AF4 /* DSDtiveSchoolViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DSDtiveSchoolViewController.h; sourceTree = "<group>"; };
 		00C9844E1A88DB8900723AF4 /* DSDtiveSchoolViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DSDtiveSchoolViewController.m; sourceTree = "<group>"; };
 		00ECBEB91A87650C009F262E /* DriveSchool.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DriveSchool.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -455,6 +488,7 @@
 		009229351A889566001460E2 /* Vendors */ = {
 			isa = PBXGroup;
 			children = (
+				00C2B06A1AA5859A00F2AC61 /* SCNavTabBar */,
 				009229361A889566001460E2 /* AFNetworking */,
 				0092295F1A889566001460E2 /* EasyJSWebView */,
 				009229671A889566001460E2 /* libWeiboSDK */,
@@ -723,9 +757,101 @@
 			path = community;
 			sourceTree = "<group>";
 		};
+		00C2B06A1AA5859A00F2AC61 /* SCNavTabBar */ = {
+			isa = PBXGroup;
+			children = (
+				00C2B06B1AA5859A00F2AC61 /* CommonMacro.h */,
+				00C2B06C1AA5859A00F2AC61 /* SCNavTabBar.bundle */,
+				00C2B06D1AA5859A00F2AC61 /* ViewControllers */,
+				00C2B0701AA5859A00F2AC61 /* Views */,
+			);
+			path = SCNavTabBar;
+			sourceTree = "<group>";
+		};
+		00C2B06D1AA5859A00F2AC61 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				00C2B06E1AA5859A00F2AC61 /* SCNavTabBarController.h */,
+				00C2B06F1AA5859A00F2AC61 /* SCNavTabBarController.m */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		00C2B0701AA5859A00F2AC61 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				00C2B0711AA5859A00F2AC61 /* SCNavTabBar.h */,
+				00C2B0721AA5859A00F2AC61 /* SCNavTabBar.m */,
+				00C2B0731AA5859A00F2AC61 /* SCPopView.h */,
+				00C2B0741AA5859A00F2AC61 /* SCPopView.m */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		00C2B0791AA58B1700F2AC61 /* newSubject */ = {
+			isa = PBXGroup;
+			children = (
+				00C2B0861AA59A0B00F2AC61 /* four */,
+				00C2B0851AA59A0100F2AC61 /* three */,
+				00C2B0811AA58CDD00F2AC61 /* two */,
+				00C2B07D1AA58C6A00F2AC61 /* one */,
+				00C2B07A1AA58B5700F2AC61 /* DSMainSubjectViewController.h */,
+				00C2B07B1AA58B5700F2AC61 /* DSMainSubjectViewController.m */,
+			);
+			name = newSubject;
+			sourceTree = "<group>";
+		};
+		00C2B07D1AA58C6A00F2AC61 /* one */ = {
+			isa = PBXGroup;
+			children = (
+				00C2B07E1AA58CAB00F2AC61 /* DSNewSubjectOneViewController.h */,
+				00C2B07F1AA58CAB00F2AC61 /* DSNewSubjectOneViewController.m */,
+			);
+			name = one;
+			sourceTree = "<group>";
+		};
+		00C2B0811AA58CDD00F2AC61 /* two */ = {
+			isa = PBXGroup;
+			children = (
+				00C2B0821AA58CF400F2AC61 /* DSNewSubjectTwoViewController.h */,
+				00C2B0831AA58CF400F2AC61 /* DSNewSubjectTwoViewController.m */,
+			);
+			name = two;
+			sourceTree = "<group>";
+		};
+		00C2B0851AA59A0100F2AC61 /* three */ = {
+			isa = PBXGroup;
+			children = (
+				00C2B0871AA59A2700F2AC61 /* DSNewSubjectThreeViewController.h */,
+				00C2B0881AA59A2700F2AC61 /* DSNewSubjectThreeViewController.m */,
+			);
+			name = three;
+			sourceTree = "<group>";
+		};
+		00C2B0861AA59A0B00F2AC61 /* four */ = {
+			isa = PBXGroup;
+			children = (
+				00C2B08A1AA59A4A00F2AC61 /* DSNewSubjectFourViewController.h */,
+				00C2B08B1AA59A4A00F2AC61 /* DSNewSubjectFourViewController.m */,
+			);
+			name = four;
+			sourceTree = "<group>";
+		};
+		00C2B08D1AA5AB6000F2AC61 /* findTeacher */ = {
+			isa = PBXGroup;
+			children = (
+				00C2B08E1AA5AB8B00F2AC61 /* DSFindTeacherViewController.h */,
+				00C2B08F1AA5AB8B00F2AC61 /* DSFindTeacherViewController.m */,
+				00C2B0911AA5AE5A00F2AC61 /* DSFindTeacherTableViewCell.h */,
+				00C2B0921AA5AE5A00F2AC61 /* DSFindTeacherTableViewCell.m */,
+			);
+			name = findTeacher;
+			sourceTree = "<group>";
+		};
 		00C9844C1A88D80000723AF4 /* DriveSchool */ = {
 			isa = PBXGroup;
 			children = (
+				00C2B0791AA58B1700F2AC61 /* newSubject */,
 				00B966871A97502900F3D7AF /* subjectTwo */,
 				00B966861A97501300F3D7AF /* subjectOne */,
 				00C9844D1A88DB8900723AF4 /* DSDtiveSchoolViewController.h */,
@@ -831,6 +957,7 @@
 		00ECBF271A879334009F262E /* main */ = {
 			isa = PBXGroup;
 			children = (
+				00C2B08D1AA5AB6000F2AC61 /* findTeacher */,
 				00ECBF241A879012009F262E /* DSMainViewController.h */,
 				00ECBF251A879012009F262E /* DSMainViewController.m */,
 				00ECBF281A87935D009F262E /* DSMainTableViewCell.h */,
@@ -926,6 +1053,7 @@
 				00C1919B1A9F625300B3012A /* bg_driveSchool_introduce_junan@2x.jpg in Resources */,
 				009229C91A889566001460E2 /* MJRefresh.bundle in Resources */,
 				0092275F1A88656F001460E2 /* icon_main_banner_one@2x.png in Resources */,
+				00C2B0751AA5859A00F2AC61 /* SCNavTabBar.bundle in Resources */,
 				009229C31A889566001460E2 /* easyjs-inject.js in Resources */,
 				00C082201A9E2AE5008D21B1 /* image_main_news_five@2x.jpg in Resources */,
 				009227691A88656F001460E2 /* icon_main_tab_two_clicked@2x.png in Resources */,
@@ -985,8 +1113,11 @@
 			files = (
 				009229DA1A889566001460E2 /* UIButton+WebCache.m in Sources */,
 				009229BD1A889566001460E2 /* UIAlertView+AFNetworking.m in Sources */,
+				00C2B08C1AA59A4A00F2AC61 /* DSNewSubjectFourViewController.m in Sources */,
 				009229CE1A889566001460E2 /* UIScrollView+MJExtension.m in Sources */,
+				00C2B0901AA5AB8B00F2AC61 /* DSFindTeacherViewController.m in Sources */,
 				009229F31A88967A001460E2 /* AppUtil.m in Sources */,
+				00C2B0801AA58CAB00F2AC61 /* DSNewSubjectOneViewController.m in Sources */,
 				009229BF1A889566001460E2 /* UIImageView+AFNetworking.m in Sources */,
 				009229C41A889566001460E2 /* EasyJSDataFunction.m in Sources */,
 				009229DE1A889566001460E2 /* UIImageView+HighlightedWebCache.m in Sources */,
@@ -1006,11 +1137,13 @@
 				0092277C1A889482001460E2 /* UIActionSheet+Blocks.m in Sources */,
 				00B966851A96FD7500F3D7AF /* DSTeacherDateViewController.m in Sources */,
 				009229D31A889566001460E2 /* SDImageCache.m in Sources */,
+				00C2B0761AA5859A00F2AC61 /* SCNavTabBarController.m in Sources */,
 				009229BA1A889566001460E2 /* README.md in Sources */,
 				009229D51A889566001460E2 /* SDWebImageDecoder.m in Sources */,
 				009229BB1A889566001460E2 /* AFNetworkActivityIndicatorManager.m in Sources */,
 				009227801A889482001460E2 /* UIViewController+passedParams.m in Sources */,
 				00B9668A1A97506E00F3D7AF /* DSTeacherDataTableViewCell.m in Sources */,
+				00C2B0931AA5AE5A00F2AC61 /* DSFindTeacherTableViewCell.m in Sources */,
 				009229D61A889566001460E2 /* SDWebImageDownloader.m in Sources */,
 				00ECBF261A879012009F262E /* DSMainViewController.m in Sources */,
 				009229B81A889566001460E2 /* AFURLSessionManager.m in Sources */,
@@ -1025,6 +1158,9 @@
 				009229B71A889566001460E2 /* AFURLResponseSerialization.m in Sources */,
 				009229D01A889566001460E2 /* UIView+MJExtension.m in Sources */,
 				009229B61A889566001460E2 /* AFURLRequestSerialization.m in Sources */,
+				00C2B0841AA58CF400F2AC61 /* DSNewSubjectTwoViewController.m in Sources */,
+				00C2B07C1AA58B5700F2AC61 /* DSMainSubjectViewController.m in Sources */,
+				00C2B0771AA5859A00F2AC61 /* SCNavTabBar.m in Sources */,
 				009229B51A889566001460E2 /* AFURLConnectionOperation.m in Sources */,
 				009229B11A889566001460E2 /* AFHTTPRequestOperationManager.m in Sources */,
 				00ECBF0F1A876ED3009F262E /* UIButton+Border.m in Sources */,
@@ -1032,6 +1168,7 @@
 				009229D91A889566001460E2 /* SDWebImagePrefetcher.m in Sources */,
 				009229C51A889566001460E2 /* EasyJSWebView.m in Sources */,
 				0092277D1A889482001460E2 /* UIAlertView+Blocks.m in Sources */,
+				00C2B0781AA5859A00F2AC61 /* SCPopView.m in Sources */,
 				00922A011A889936001460E2 /* NSDictionary+Util.m in Sources */,
 				009229BC1A889566001460E2 /* UIActivityIndicatorView+AFNetworking.m in Sources */,
 				009229DB1A889566001460E2 /* UIImage+GIF.m in Sources */,
@@ -1050,6 +1187,7 @@
 				009229DF1A889566001460E2 /* UIImageView+WebCache.m in Sources */,
 				00ECBEC21A87650C009F262E /* AppDelegate.m in Sources */,
 				009227811A889482001460E2 /* UIViewController+storyboard.m in Sources */,
+				00C2B0891AA59A2700F2AC61 /* DSNewSubjectThreeViewController.m in Sources */,
 				00ECBEBF1A87650C009F262E /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
