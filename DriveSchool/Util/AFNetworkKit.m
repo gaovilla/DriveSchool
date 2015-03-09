@@ -70,22 +70,8 @@
     return [NSString stringWithFormat:@"网络请求异常，请稍后再试(%d,%@)", statusCode, [error localizedDescription]];
 }
 
-- (void)test{
     
-    NSDictionary *params =@{@"tel": @"13811514882",@"passwd":@"123456"};
-    [[AFNetworkKit sharedClient] POST:kAPI_USER_LOGIN parameters:params success:^(NSURLSessionDataTask * __unused task, id JSON) {
-       //SUCCESS
-        BTLog(@"JSON::==%@",JSON);
-        
-    } failure:^(NSURLSessionDataTask *__unused task, NSError *error) {
-       //fail
-        BTLog(@"fail====%@",error);
-        
-    }];
 
-    
-    
-}
 
 
 

@@ -31,6 +31,24 @@
     [self initFrame];
     [self initBanner];
     [self initFounctionItem];
+    [self apiTest];
+}
+-(void)apiTest{
+//    NSDictionary *params = @{@"id":@"1",@"uid":@"10107"};
+    NSDictionary *params = @{@"data":@"{\"userName\":\"18510669878\",\"password\":\"123456\"}"};
+
+    [[AFNetworkKit sharedClient] POST:kAPI_TEST_LOGIN parameters:params success:^(NSURLSessionDataTask *  task, id json) {
+        //SUCCESS
+        NSLog(@"%@",json);
+       
+    } failure:^(NSURLSessionDataTask * task, NSError *error) {
+        //fail
+        
+        NSString * message = [AFNetworkKit getMessageWithResponse:task.response Error:error];
+
+    }];
+    
+
 }
 -(void)viewWillAppear:(BOOL)animated{
     [super viewWillAppear:animated];
@@ -71,17 +89,23 @@
     [_functionItemArray addObject:itemThree];
 
     if(_functionItemArray.count<5){
+        NSLog(@"%f",_functionItemView.frame.size.height);
         for (int i=0; i<_functionItemArray.count; i++) {
             NSDictionary *dic =  [_functionItemArray objectAtIndex:i];
             
             int width = CURRENT_WIDTH / _functionItemArray.count;
             UIView *view = [[UIView alloc]initWithFrame:CGRectMake(width*i, 0, width, _functionItemView.frame.size.height)];
-            UIButton *button = [[UIButton alloc]initWithFrame:CGRectMake(0, -20, view.frame.size.width, view.frame.size.width)];
+            UIButton *button = [[UIButton alloc]initWithFrame:CGRectMake(0, 0, view.frame.size.width, view.frame.size.width-40)];
             button.tag = i;
             [button setImage:[UIImage imageNamed:[dic objectForKey:@"image"]] forState:UIControlStateNormal];
             [button addTarget:self action:@selector(clickFunctionItem:) forControlEvents:UIControlEventTouchUpInside];
             NSLog(@"%f",view.frame.size.width);
-            UILabel *label = [[UILabel alloc]initWithFrame:CGRectMake(0,  view.frame.size.height-40, view.frame.size.width, 10)];
+            int offset = 25;
+            if(iPhone6){
+                offset = 18;
+            }
+            UILabel *label = [[UILabel alloc]initWithFrame:CGRectMake(0,  view.frame.size.height-offset, view.frame.size.width, 10)];
+            
             label.text = [dic objectForKey:@"name"];
 
             label.font = [UIFont systemFontOfSize:13.5];
@@ -98,7 +122,10 @@
 }
 -(void)clickFunctionItem:(UIButton *)button{
     NSLog(@"clickItem");
-    if(button.tag == 0){
+    if(button.tag == 1){
+        UIViewController *vc = [self getViewControllerFromStoryBoard:@"DSFindSchoolViewController"];
+        [self.navigationController pushViewController:vc animated:YES];
+    }else if(button.tag == 2){
         UIViewController *vc = [self getViewControllerFromStoryBoard:@"DSFindTeacherViewController"];
         [self.navigationController pushViewController:vc animated:YES];
     }

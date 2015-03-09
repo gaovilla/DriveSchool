@@ -105,6 +105,7 @@
 		00B966851A96FD7500F3D7AF /* DSTeacherDateViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 00B966841A96FD7500F3D7AF /* DSTeacherDateViewController.m */; };
 		00B9668A1A97506E00F3D7AF /* DSTeacherDataTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 00B966891A97506E00F3D7AF /* DSTeacherDataTableViewCell.m */; };
 		00B9668D1A9752E400F3D7AF /* icon_subjectTwo_time@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 00B9668C1A9752E400F3D7AF /* icon_subjectTwo_time@2x.png */; };
+		00BAEB9A1AA8667600878C0D /* DSTeacherDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 00BAEB991AA8667600878C0D /* DSTeacherDetailViewController.m */; };
 		00C0821B1A9E1DD6008D21B1 /* bg_community@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 00C0821A1A9E1DD6008D21B1 /* bg_community@2x.jpg */; };
 		00C082201A9E2AE5008D21B1 /* image_main_news_five@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 00C0821C1A9E2AE5008D21B1 /* image_main_news_five@2x.jpg */; };
 		00C082211A9E2AE5008D21B1 /* image_main_news_four@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 00C0821D1A9E2AE5008D21B1 /* image_main_news_four@2x.jpg */; };
@@ -125,6 +126,9 @@
 		00C2B08C1AA59A4A00F2AC61 /* DSNewSubjectFourViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 00C2B08B1AA59A4A00F2AC61 /* DSNewSubjectFourViewController.m */; };
 		00C2B0901AA5AB8B00F2AC61 /* DSFindTeacherViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 00C2B08F1AA5AB8B00F2AC61 /* DSFindTeacherViewController.m */; };
 		00C2B0931AA5AE5A00F2AC61 /* DSFindTeacherTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 00C2B0921AA5AE5A00F2AC61 /* DSFindTeacherTableViewCell.m */; };
+		00C2B0971AA6E04600F2AC61 /* DSFindSchoolViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 00C2B0961AA6E04600F2AC61 /* DSFindSchoolViewController.m */; };
+		00C2B09A1AA6E06B00F2AC61 /* DSFindSchoolTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 00C2B0991AA6E06B00F2AC61 /* DSFindSchoolTableViewCell.m */; };
+		00C2B09F1AA6F0F200F2AC61 /* DSNewStudentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 00C2B09E1AA6F0F200F2AC61 /* DSNewStudentViewController.m */; };
 		00C9844F1A88DB8900723AF4 /* DSDtiveSchoolViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 00C9844E1A88DB8900723AF4 /* DSDtiveSchoolViewController.m */; };
 		00ECBEBF1A87650C009F262E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 00ECBEBE1A87650C009F262E /* main.m */; };
 		00ECBEC21A87650C009F262E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 00ECBEC11A87650C009F262E /* AppDelegate.m */; };
@@ -325,6 +329,8 @@
 		00B966881A97506E00F3D7AF /* DSTeacherDataTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DSTeacherDataTableViewCell.h; sourceTree = "<group>"; };
 		00B966891A97506E00F3D7AF /* DSTeacherDataTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DSTeacherDataTableViewCell.m; sourceTree = "<group>"; };
 		00B9668C1A9752E400F3D7AF /* icon_subjectTwo_time@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon_subjectTwo_time@2x.png"; sourceTree = "<group>"; };
+		00BAEB981AA8667600878C0D /* DSTeacherDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DSTeacherDetailViewController.h; sourceTree = "<group>"; };
+		00BAEB991AA8667600878C0D /* DSTeacherDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DSTeacherDetailViewController.m; sourceTree = "<group>"; };
 		00C0821A1A9E1DD6008D21B1 /* bg_community@2x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "bg_community@2x.jpg"; sourceTree = "<group>"; };
 		00C0821C1A9E2AE5008D21B1 /* image_main_news_five@2x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "image_main_news_five@2x.jpg"; sourceTree = "<group>"; };
 		00C0821D1A9E2AE5008D21B1 /* image_main_news_four@2x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "image_main_news_four@2x.jpg"; sourceTree = "<group>"; };
@@ -356,6 +362,12 @@
 		00C2B08F1AA5AB8B00F2AC61 /* DSFindTeacherViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DSFindTeacherViewController.m; sourceTree = "<group>"; };
 		00C2B0911AA5AE5A00F2AC61 /* DSFindTeacherTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DSFindTeacherTableViewCell.h; sourceTree = "<group>"; };
 		00C2B0921AA5AE5A00F2AC61 /* DSFindTeacherTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DSFindTeacherTableViewCell.m; sourceTree = "<group>"; };
+		00C2B0951AA6E04600F2AC61 /* DSFindSchoolViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DSFindSchoolViewController.h; sourceTree = "<group>"; };
+		00C2B0961AA6E04600F2AC61 /* DSFindSchoolViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DSFindSchoolViewController.m; sourceTree = "<group>"; };
+		00C2B0981AA6E06B00F2AC61 /* DSFindSchoolTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DSFindSchoolTableViewCell.h; sourceTree = "<group>"; };
+		00C2B0991AA6E06B00F2AC61 /* DSFindSchoolTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DSFindSchoolTableViewCell.m; sourceTree = "<group>"; };
+		00C2B09D1AA6F0F200F2AC61 /* DSNewStudentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DSNewStudentViewController.h; sourceTree = "<group>"; };
+		00C2B09E1AA6F0F200F2AC61 /* DSNewStudentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DSNewStudentViewController.m; sourceTree = "<group>"; };
 		00C9844D1A88DB8900723AF4 /* DSDtiveSchoolViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DSDtiveSchoolViewController.h; sourceTree = "<group>"; };
 		00C9844E1A88DB8900723AF4 /* DSDtiveSchoolViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DSDtiveSchoolViewController.m; sourceTree = "<group>"; };
 		00ECBEB91A87650C009F262E /* DriveSchool.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DriveSchool.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -844,8 +856,30 @@
 				00C2B08F1AA5AB8B00F2AC61 /* DSFindTeacherViewController.m */,
 				00C2B0911AA5AE5A00F2AC61 /* DSFindTeacherTableViewCell.h */,
 				00C2B0921AA5AE5A00F2AC61 /* DSFindTeacherTableViewCell.m */,
+				00BAEB981AA8667600878C0D /* DSTeacherDetailViewController.h */,
+				00BAEB991AA8667600878C0D /* DSTeacherDetailViewController.m */,
 			);
 			name = findTeacher;
+			sourceTree = "<group>";
+		};
+		00C2B0941AA6E00E00F2AC61 /* findSchool */ = {
+			isa = PBXGroup;
+			children = (
+				00C2B0951AA6E04600F2AC61 /* DSFindSchoolViewController.h */,
+				00C2B0961AA6E04600F2AC61 /* DSFindSchoolViewController.m */,
+				00C2B0981AA6E06B00F2AC61 /* DSFindSchoolTableViewCell.h */,
+				00C2B0991AA6E06B00F2AC61 /* DSFindSchoolTableViewCell.m */,
+			);
+			name = findSchool;
+			sourceTree = "<group>";
+		};
+		00C2B09C1AA6F0D000F2AC61 /* newStudent */ = {
+			isa = PBXGroup;
+			children = (
+				00C2B09D1AA6F0F200F2AC61 /* DSNewStudentViewController.h */,
+				00C2B09E1AA6F0F200F2AC61 /* DSNewStudentViewController.m */,
+			);
+			name = newStudent;
 			sourceTree = "<group>";
 		};
 		00C9844C1A88D80000723AF4 /* DriveSchool */ = {
@@ -957,6 +991,8 @@
 		00ECBF271A879334009F262E /* main */ = {
 			isa = PBXGroup;
 			children = (
+				00C2B09C1AA6F0D000F2AC61 /* newStudent */,
+				00C2B0941AA6E00E00F2AC61 /* findSchool */,
 				00C2B08D1AA5AB6000F2AC61 /* findTeacher */,
 				00ECBF241A879012009F262E /* DSMainViewController.h */,
 				00ECBF251A879012009F262E /* DSMainViewController.m */,
@@ -1155,9 +1191,11 @@
 				009229B31A889566001460E2 /* AFNetworkReachabilityManager.m in Sources */,
 				009229E21A889566001460E2 /* readme.markdown in Sources */,
 				0092277F1A889482001460E2 /* UIImage+Additions.m in Sources */,
+				00C2B0971AA6E04600F2AC61 /* DSFindSchoolViewController.m in Sources */,
 				009229B71A889566001460E2 /* AFURLResponseSerialization.m in Sources */,
 				009229D01A889566001460E2 /* UIView+MJExtension.m in Sources */,
 				009229B61A889566001460E2 /* AFURLRequestSerialization.m in Sources */,
+				00C2B09F1AA6F0F200F2AC61 /* DSNewStudentViewController.m in Sources */,
 				00C2B0841AA58CF400F2AC61 /* DSNewSubjectTwoViewController.m in Sources */,
 				00C2B07C1AA58B5700F2AC61 /* DSMainSubjectViewController.m in Sources */,
 				00C2B0771AA5859A00F2AC61 /* SCNavTabBar.m in Sources */,
@@ -1180,9 +1218,11 @@
 				009229D11A889566001460E2 /* MKAnnotationView+WebCache.m in Sources */,
 				001864FC1A8F352E001ED251 /* DSSubjectTwoCollectionViewCell.m in Sources */,
 				009229F51A88967A001460E2 /* StrUtil.m in Sources */,
+				00BAEB9A1AA8667600878C0D /* DSTeacherDetailViewController.m in Sources */,
 				009229B41A889566001460E2 /* AFSecurityPolicy.m in Sources */,
 				009229D71A889566001460E2 /* SDWebImageDownloaderOperation.m in Sources */,
 				009229C21A889566001460E2 /* UIWebView+AFNetworking.m in Sources */,
+				00C2B09A1AA6E06B00F2AC61 /* DSFindSchoolTableViewCell.m in Sources */,
 				009229C61A889566001460E2 /* EasyJSWebViewProxyDelegate.m in Sources */,
 				009229DF1A889566001460E2 /* UIImageView+WebCache.m in Sources */,
 				00ECBEC21A87650C009F262E /* AppDelegate.m in Sources */,

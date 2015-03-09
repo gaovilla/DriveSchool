@@ -641,4 +641,13 @@ CGSize CWSizeReduce(CGSize size, CGFloat limit)   // 按比例减少尺寸
     }
     return nil;
 }
+//版本信息，设置在request.header和登录请求中
++(NSString *)getAppVersionInfo{
+    
+    NSString *outdoorversion = [[[NSBundle mainBundle]infoDictionary]objectForKey:@"CFBundleShortVersionString"];
+    NSString *indoorversion = [[[NSBundle mainBundle]infoDictionary]objectForKey:@"CFBundleVersion"];
+    NSString *app_version=[NSString stringWithFormat:@"ios-%@(%@)-%@",outdoorversion,indoorversion,kAPP_VERSION_INFO];
+    return app_version;
+}
+
 @end

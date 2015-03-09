@@ -23,7 +23,7 @@
     [self setSubjectViews];
 }
 -(void)setSubjectViews{
-       self.navigationController.navigationBar.translucent = NO;
+    self.navigationController.navigationBar.translucent = NO;
 
     
     UIViewController *subjectOne = [self getViewControllerFromStoryBoard:@"DSNewSubjectOneViewController"];
@@ -39,7 +39,13 @@
     subjectFour.title = @"科目四";
     
     SCNavTabBarController *navTabBarController = [[SCNavTabBarController alloc] init];
+//    NSMutableArray *array = [[NSMutableArray alloc]init];
+//    for (int i; i<5; i++) {
+//        [array addObject:subjectOne];
+//        i++;
+//    }
     navTabBarController.subViewControllers = @[subjectOne, subjectTwo,subjectThree,subjectFour];
+//    navTabBarController.subViewControllers = [[NSArray alloc]initWithArray:array];
     navTabBarController.navTabBarColor = [UIColor whiteColor];
 //        navTabBarController.showArrowButton = YES;
     [navTabBarController addParentController:self];

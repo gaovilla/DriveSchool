@@ -1,18 +1,17 @@
 //
-//  DSFindTeacherTableViewCell.m
+//  DSFindSchoolTableViewCell.m
 //  DriveSchool
 //
-//  Created by 张学成 on 15/3/3.
+//  Created by 张学成 on 15/3/4.
 //  Copyright (c) 2015年 张学成. All rights reserved.
 //
 
-#import "DSFindTeacherTableViewCell.h"
+#import "DSFindSchoolTableViewCell.h"
 
-@implementation DSFindTeacherTableViewCell
+@implementation DSFindSchoolTableViewCell
 
 - (void)awakeFromNib {
     // Initialization code
-    self.moneyLabel.frame = CGRectMake(CURRENT_WIDTH-70, self.moneyLabel.frame.origin.y, self.moneyLabel.frame.size.width, self.moneyLabel.frame.size.height);
 }
 
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated {
