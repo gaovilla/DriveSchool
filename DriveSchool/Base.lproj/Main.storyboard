@@ -265,7 +265,7 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="21/30人" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="geg-mu-CGh">
-                                                    <rect key="frame" x="194" y="21" width="2620" height="21"/>
+                                                    <rect key="frame" x="194" y="21" width="2940" height="21"/>
                                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -387,10 +387,6 @@
                                 <rect key="frame" x="0.0" y="0.0" width="333" height="563"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                 <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_driveSchool_teacherEight.jpg" id="uqM-J7-Qbf">
-                                        <rect key="frame" x="8" y="0.0" width="310" height="143"/>
-                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
-                                    </imageView>
                                     <view contentMode="scaleToFill" id="Ewj-65-Ord">
                                         <rect key="frame" x="5" y="148" width="310" height="246"/>
                                         <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
@@ -468,7 +464,7 @@
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     </view>
                                     <view contentMode="scaleToFill" id="prr-vi-ZTI">
-                                        <rect key="frame" x="5" y="400" width="310" height="246"/>
+                                        <rect key="frame" x="5" y="400" width="310" height="350"/>
                                         <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="教练简介" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="kII-Bw-EGm">
@@ -493,6 +489,16 @@
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     </view>
+                                    <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="y3l-Td-WM4">
+                                        <rect key="frame" x="5" y="5" width="310" height="143"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                        <subviews>
+                                            <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" id="fAm-5v-Bsm">
+                                                <rect key="frame" x="136" y="106" width="39" height="37"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </pageControl>
+                                        </subviews>
+                                    </scrollView>
                                 </subviews>
                             </scrollView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="gcF-Cl-LYF">
@@ -510,10 +516,12 @@
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
                     <connections>
                         <outlet property="addressField" destination="ety-uP-rYS" id="ybu-r4-Uoj"/>
+                        <outlet property="bannerScrollView" destination="y3l-Td-WM4" id="WT0-4V-5Py"/>
                         <outlet property="callButton" destination="tlR-uQ-dfo" id="dd5-S8-Q1e"/>
                         <outlet property="infoVoew" destination="Ewj-65-Ord" id="dfY-FP-B5Y"/>
                         <outlet property="moneyLabel" destination="uho-B8-ytm" id="y1s-WE-fMX"/>
                         <outlet property="nameLabel" destination="bAL-X5-Icx" id="8fZ-KN-7r2"/>
+                        <outlet property="pageControl" destination="fAm-5v-Bsm" id="6BV-6s-Qe3"/>
                         <outlet property="scrollView" destination="bcT-FI-IqO" id="0NL-8u-DDl"/>
                         <outlet property="teacherInfoTextView" destination="TqS-vi-Nte" id="mY9-bT-Knz"/>
                         <outlet property="teacherInfoView" destination="prr-vi-ZTI" id="BsZ-Kg-4cB"/>
@@ -767,14 +775,14 @@
                                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                         </imageView>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="新2015年驾校科目四安全常识" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="lku-zw-vnP">
-                                                            <rect key="frame" x="99" y="9" width="2466" height="28"/>
+                                                            <rect key="frame" x="99" y="9" width="2786" height="28"/>
                                                             <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                                             <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="   长春学车选汇通驾校，不管是学自动挡还是学手动挡，特惠班3000元一票到底，每天练车1小时，最快3个月可拿证！" lineBreakMode="characterWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="uJg-dk-EON">
-                                                            <rect key="frame" x="99" y="31" width="4620" height="48"/>
+                                                            <rect key="frame" x="99" y="31" width="4940" height="48"/>
                                                             <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                             <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
@@ -979,7 +987,6 @@
         <image name="bg_community.jpg" width="320" height="455"/>
         <image name="bg_driveSchool_introduce_junan.jpg" width="320" height="669"/>
         <image name="bg_driveSchool_subjectOne.jpg" width="320" height="412"/>
-        <image name="icon_driveSchool_teacherEight.jpg" width="95" height="95"/>
         <image name="icon_driveSchool_teacherFive.jpg" width="95" height="95"/>
         <image name="icon_driverSchool.png" width="8" height="7"/>
         <image name="icon_main_tab_four_click.png" width="26" height="23"/>
