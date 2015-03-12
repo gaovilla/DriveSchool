@@ -7,7 +7,7 @@
 //
 
 #import "DSNewSubjectOneViewController.h"
-
+#import "DemoViewController.h"
 @interface DSNewSubjectOneViewController ()
 
 @end
@@ -37,4 +37,11 @@
 }
 */
 
+- (IBAction)btnClick:(UIButton *)sender {
+    
+    DemoViewController*demo=[[DemoViewController alloc]init];
+    [self.navigationController pushViewController:demo animated:YES];
+    
+    
+}
 @end
