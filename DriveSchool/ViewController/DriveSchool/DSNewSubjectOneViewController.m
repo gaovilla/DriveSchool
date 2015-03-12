@@ -19,6 +19,7 @@
     // Do any additional setup after loading the view.
     self.edgesForExtendedLayout = UIRectEdgeNone;
     self.navigationController.navigationBar.translucent = NO;
+    NSLog(@"ddddd");
 }
 
 - (void)didReceiveMemoryWarning {
